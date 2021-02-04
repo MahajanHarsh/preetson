@@ -1,0 +1,33 @@
+<div class="container">
+  <h4>Dispensers</h4>
+
+  <table class="tab">
+    <thead>
+      <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Level</th>
+
+        <th>Battery Level</th>
+
+        <th>Last Updated</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let dispenser of dispensers">
+        <td>{{ dispenser.id }}</td>
+
+        <td>{{ dispenser.name }}</td>
+
+        <td>{{ dispenser.level }}</td>
+
+        <td>{{ dispenser.battery }}</td>
+
+        <td>{{ dispenser.lastUpdated }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

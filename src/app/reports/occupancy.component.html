@@ -30,7 +30,7 @@
 
         <td>{{ stall.name }}</td>
 
-        <td>{{ stall.state }}</td>   
+        <td [ngClass]="stall.state == true ? 'ok':'alert' ">{{ stall.state }}</td>   
 
         <td>{{ stall.lastUpdated }}</td>    
 

@@ -21,4 +21,10 @@ export class DashboardComponent {
     this.envMonitor = false;
     this.dispensor = true;
   }
+
+  public toggleEnv() {
+    this.stallOccupancy = false;
+    this.envMonitor = true;
+    this.dispensor = false;
+  }
 }

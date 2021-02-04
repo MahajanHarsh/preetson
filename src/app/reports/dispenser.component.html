@@ -22,9 +22,15 @@
 
         <td>{{ dispenser.name }}</td>
 
-        <td>{{ dispenser.level }}</td>
+        <td [ngClass]="dispenser.level <= 50 ? 'alert':'ok' ">
+          {{ dispenser.level }}
+        </td>
 
-        <td>{{ dispenser.battery }}</td>
+        <td>
+          <progress id="file" value="{{dispenser.battery}}" max="100">
+          </progress>
+          {{dispenser.battery}}%
+        </td>
 
         <td>{{ dispenser.lastUpdated }}</td>
       </tr>
